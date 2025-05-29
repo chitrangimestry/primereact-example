@@ -11,6 +11,9 @@ import DataTableComponent from "./components/dataTable";
 import PasswordComponent from "./components/passwordComponent";
 import CalendarComponent from "./components/calendarComponent";
 import InputMaskComponent from "./components/inputMask";
+import DialogComponent from "./components/dialogComponent";
+import PaginatorComponent from "./components/paginatorComponent";
+import SliderComponent from "./components/sliderComponent";
 
 function App() {
   return (
@@ -19,9 +22,13 @@ function App() {
         <h1 className="text-2xl font-bold mb-4">PrimeReact Example</h1>
         <DataTableComponent />
         <PasswordComponent />
-        <CalendarComponent />
         <InputMaskComponent />
-        <div className="mt-4 p-4"></div>
+        <PaginatorComponent />
+        <SliderComponent />
+        <div className="mt-4 p-4 flex flex-row gap-4 justify-center items-center">
+          <CalendarComponent />
+          <DialogComponent />
+        </div>
       </div>
     </>
   );
